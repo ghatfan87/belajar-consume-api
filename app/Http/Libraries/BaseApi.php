@@ -58,6 +58,6 @@ class BaseApi
     }
     public function deletePermanent(String $endpoint, Array $data = [])
     {
-        return $this->client()->delete($endpoint , $data);
+        return $this->client()->get($endpoint , $data);
     }
 }

@@ -116,7 +116,7 @@ class StudentController extends Controller
             $errors = $proses->json('data');
             return redirect()->back()->with(['errors' => $errors]);
     }else {
-        return redirect('/')->with('success','Berhasil Mengubah data siswa dari API');
+        return redirect('/')->with('success','Berhasil Menghapus data siswa dari API');
     }
 }
     public function trash()

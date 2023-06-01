@@ -13,7 +13,9 @@
             <li>Nama : {{ $show['nama'] }}</li>
             <li>Rombel: {{ $show['rombel'] }}</li>
             <li>Rayon : {{ $show['rayon'] }}</li>
-            <li>Aksi: <a href= "{{route('restore', $show['id'])}}">Restore</a></li>
+            <li>Aksi: <a href= "{{route('restore', $show['id'])}}">Restore</a>||
+                <a href="{{route('permanent', $show['id'])}}">Hapus Permanent</a>
+            </li>
         </ol>
     @endforeach
 </body>
